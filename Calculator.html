@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #width {
+            width: 100%;
+        }
+
+        button {
+            width: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .shaw {
+            box-shadow: 0 7px 30px rgba(0, 0, 0, 10);
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <table class="shaw" style="background-color: rgba(196, 98, 98, 0.608); border-radius: 10px;">
+            <tr style="height: 25px; width: 35px;">
+                <td colspan="4"> <input type="text" id="display" readonly></td>
+
+            </tr>
+            <tr class="cal">
+                <td>
+                    <button onclick="append('7')">7</button>
+                </td>
+                <td>
+                    <button onclick="append('8')">8</button>
+                </td>
+                <td>
+                    <button onclick="append('9')">9</button>
+                </td>
+                <td>
+                    <button onclick="append('/')">/</button>
+                </td>
+            </tr>
+            <tr></tr>
+            <tr class="cal">
+                <td>
+                    <button onclick="append('4')">4</button>
+                </td>
+                <td>
+                    <button onclick="append('5')">5</button>
+                </td>
+                <td>
+                    <button onclick="append('6')">6</button>
+                </td>
+                <td>
+                    <button onclick="append('*')">*</button>
+                </td>
+            </tr>
+            <tr></tr>
+            <tr class="cal ">
+                <td>
+                    <button onclick="append('1')">1</button>
+                </td>
+                <td>
+                    <button onclick="append('2')">2</button>
+                </td>
+                <td>
+                    <button onclick="append('3')">3</button>
+                </td>
+                <td>
+                    <button onclick="append('-')">-</button>
+                </td>
+            </tr>
+            <tr></tr>
+            <tr class="cal">
+                <td>
+                    <button onclick="append('.')">.</button>
+                </td>
+                <td>
+                    <button onclick="append('0')">0</button>
+                </td>
+                <td>
+                    <button onclick="append('+')">+</button>
+                </td>
+                <td>
+                    <button style="background-color: rgb(215, 20, 53);" onclick="clear_display()">C</button>
+                </td>
+            </tr>
+            <tr></tr>
+            <tr style="height: 25px; width: 35px;">
+                <td colspan="4">
+                    <center style="color: aliceblue;"> <button style="background-color: rgb(215, 46, 20);" id="width"
+                            onclick="calculate()">=</button>
+                    </center>
+                </td>
+
+            </tr>
+        </table>
+    </center>
+    <script>
+        function append(value) {
+            document.getElementById("display").value += value;
+        }
+        function calculate() {
+            var expression = document.getElementById("display").value;
+            document.getElementById("display").value = eval(expression);
+        }
+        function clear_display() {
+            document.getElementById("display").value = "";
+        }
+    </script>
+</body>
+
+</html>

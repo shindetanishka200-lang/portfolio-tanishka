@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tanishka Portfolio</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+ 
+</head>
+
+<body class="bodytext">
+
+
+  <button id="topBtn" onclick="scrollToTop()">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <button><a href="https://wa.me/8623027625" target="_blank" id="whatsappBtn">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a></button>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-nav">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#"> Tanishka Portfolio </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#education">Education</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#certificate">Certificate</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#Achievements">Achievements</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#Resume">Resume</a>
+          </li>
+
+
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+
+        <div class="translate-dropdown">
+
+          <button class="translate-btn">
+            <i class="fa-solid fa-language"></i>
+          </button>
+
+          <div class="dropdown-content ">
+            <a href="#" onclick="changeLanguage('en')">English</a>
+            <a href="#" onclick="changeLanguage('hi')">Hindi</a>
+            <a href="#" onclick="changeLanguage('mr')">Marathi</a>
+          </div>
+
+        </div>
+
+        <div id="google_translate_element"></div>
+
+        <script>
+          function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+              {
+                pageLanguage: 'en',
+                includedLanguages: 'en,hi,mr'
+              },
+              'google_translate_element'
+            );
+          }
+
+          function changeLanguage(lang) {
+            var select = document.querySelector(".goog-te-combo");
+
+            if (select) {
+              select.value = lang;
+              select.dispatchEvent(new Event("change"));
+            }
+          }
+        </script>
+
+        <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  </nav>
+
+  <section id="home" class="hero-section" data-aos="fade-left">
+    <div class="container text-center">
+      <img src="tanu.jpeg" class="profile-img image-fluid" alt="Profile" />
+
+      <h1 class="display-4 fw-bold">Hi, I'm Tanishka</h1>
+
+      <h4 class="mt-3">Web Developer & Computer Engineering Student</h4>
+
+      <p class="lead mt-3">
+        Building Creative, Responsive and Modern Websites
+      </p>
+
+      <a href="#contact" class="btn custom-btn mt-3"> Contact Me </a>
+    </div>
+  </section>
+
+  <section id="about" class="section-card" data-aos="fade-left">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+
+      <p>
+        I am Tanishka Ganesh Shinde, a third year Diploma in Computer Engineering student currently pursuing my 5th
+        semester. I am passionate about technology and enjoy creating modern, responsive, and user friendly websites. My
+        technical skills include HTML, CSS, Bootstrap, JavaScript, and Figma, which help me transform ideas into
+        functional and visually appealing digital experiences.
+
+        <br>
+        <br>
+        I have a strong interest in Web Development, UI/UX Design, and Content Writing. As a quick learner, I enjoy
+        exploring new technologies and continuously improving my skills. My strengths include problem solving,
+        creativity, teamwork, and adaptability, which enable me to work effectively on both individual and collaborative
+        projects.
+        <br>
+        <br>
+        My career goal is to become a Full Stack Developer and UI/UX Designer, where I can combine technical expertise
+        with creative design thinking to build innovative and impactful digital solutions. I am always eager to learn,
+        grow, and take on new challenges that help me advance both personally and professionally.
+      </p>
+    </div>
+  </section>
+
+  <section id="skills" class="section-card" data-aos="fade-left">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+
+      <div class="skills">
+
+        <div class="circle html">
+          <span>0%</span>
+          <p>HTML</p>
+        </div>
+
+        <div class="circle css">
+          <span>0%</span>
+          <p>CSS</p>
+        </div>
+
+        <div class="circle js">
+          <span>0%</span>
+          <p>JavaScript</p>
+        </div>
+
+        <div class="circle bootstrap">
+          <span>0%</span>
+          <p>Bootstap</p>
+        </div>
+
+        <div class="circle writer">
+          <span>0%</span>
+          <p>Writer</p>
+        </div>
+
+        <div class="circle figma">
+          <span>0%</span>
+          <p>Figma</p>
+        </div>
+
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section-card" data-aos="fade-left">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+
+      <div class="project-container">
+
+        <div class="project-card">
+          <h3>Portfolio Website</h3>
+          <p>Modern responsive portfolio website built using HTML, CSS, Bootstrap and JavaScript.</p>
+          <a href="index.html" target="_blank">View Project</a>
+        </div>
+
+        <div class="project-card">
+          <h3>Calculator</h3>
+          <p>Simple calculator using HTML, CSS and JavaScript with clean UI.</p>
+          <a href="Calculator.html" target="_blank">View Project</a>
+        </div>
+
+        <div class="project-card">
+          <h3>Registration Form</h3>
+          <p>Responsive registration form using Bootstrap and validation.</p>
+          <a href="Registration.html" target="_blank">View Project</a>
+        </div>
+
+        <div class="project-card">
+          <h3>Vacation Page</h3>
+          <p>Landing page design using Bootstrap for travel/vacation theme.</p>
+          <a href="Vacation.html" target="_blank">View Project</a>
+        </div>
+
+        <div class="project-card">
+          <h3>Patient Form</h3>
+          <p>Patient registration system UI using HTML, CSS and Bootstrap.</p>
+          <a href="Patient.html" target="_blank">View Project</a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section id="education" class="section-card" data-aos="fade-left">
+    <div class="container">
+      <h2 class="section-title">Education</h2>
+
+      <div class="education-container">
+
+        <div class="edu-card">
+          <div class="year">2023</div>
+          <h3>Secondary School Certificates</h3>
+          <p>NESS School</p>
+          <span>Percentage : 70%</span>
+        </div>
+
+
+        <div class="edu-card">
+          <div class="year">2025 - 2026</div>
+          <h3>Diploma in Computer Engineering</h3>
+          <p>Shivaji Polytechnic College,Sangola</p>
+          <span>Percentage of 1rd Sem: 78.35%</span>
+          <span>Percentage of 2rd Sem: 83.44%</span>
+        </div>
+
+
+        <div class="edu-card">
+          <div class="year">2025 - 2026</div>
+          <h3>Diploma in Computer Engineering</h3>
+          <p>Shivaji Polytechnic College,Sangola</p>
+          <span>Percentage of 3rd Sem: 78.77%</span>
+          <span>Percentage of 4rd Sem: 79.77%</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="certificate" class="section-card" data-aos="fade-left">
+    <div class="container">
+      <h2 class="section-title">Certificates</h2>
+
+      <div class="certificate-container">
+
+        <div class="certificate-card">
+          <i class="fa-solid fa-certificate"></i>
+          <h3>Python Machine Learning & Deep Learning</h3>
+          <p>Certificate of Completion</p>
+
+          <div class="certificate-buttons">
+            <a href="ChatGPT Image Jul 1, 2026, 04_51_43 PM.png" target="_blank">View</a>
+            <a href="ChatGPT Image Jul 1, 2026, 04_51_43 PM.png" download>Download</a>
+          </div>
+        </div>
+
+        <div class="certificate-card">
+          <i class="fa-solid fa-certificate"></i>
+          <h3>C Programming Programming</h3>
+          <p>Certificate of Completion</p>
+
+          <div class="certificate-buttons">
+            <a href="ChatGPT Image Jul 1, 2026, 04_49_17 PM.png" target="_blank">View</a>
+            <a href="ChatGPT Image Jul 1, 2026, 04_49_17 PM.png" download>Download</a>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <section id="Achievements" class="section-card" data-aos="fade-left">
+    <h2 class="section-title">Achievements</h2>
+    <div class="achievement-container">
+
+      <div class="achievement-card">
+        <i class="fa-solid fa-trophy"></i>
+        <h3>Academic Excellence</h3>
+        <p>Achieved 83.44% in 1rd Semester Diploma in Computer Engineering.</p>
+      </div>
+
+      <div class="achievement-card">
+        <i class="fa-solid fa-award"></i>
+        <h3>Web Development</h3>
+        <p>Developed responsive web projects using HTML, CSS, Bootstrap and JavaScript.</p>
+      </div>
+
+      <div class="achievement-card">
+        <i class="fa-solid fa-certificate"></i>
+        <h3>Certifications</h3>
+        <p>Completed various technical certifications to enhance professional skills.</p>
+      </div>
+
+      <div class="achievement-card">
+        <i class="fa-solid fa-lightbulb"></i>
+        <h3>Creative Design</h3>
+        <p>Designed user friendly interfaces and prototypes using Figma.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="Resume" class="section-card" data-aos="fade-left">
+    <div class="container">
+      <h2 class="section-title">Resume</h2>
+
+      <div class="resume-container">
+        <div class="resume-card">
+
+          <i class="fa-solid fa-file-lines resume-icon"></i>
+
+          <h3>My Resume</h3>
+
+          <p>View or download my latest resume.</p>
+
+          <div class="resume-buttons">
+            <a href="resume.html" target="_blank">
+              <i class="fa-solid fa-eye"></i> View
+            </a>
+
+            <a href="resume.html" download>
+              <i class="fa-solid fa-download"></i> Download
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="contact" class="section-card" data-aos="fade-left">
+    <div class="container text-center">
+              <div class="row ">
+                <div class="col-lg-6">
+                  <label for="">Enter name</label>
+                  <input type="text" class="form-control " placeholder="Enter Name">
+
+                </div>
+
+                <div class="col-lg-6">
+                  <label for="">Email Address</label>
+                  <input type="email" class="form-control " placeholder="name@example.com">
+
+                </div>
+                <div class="col-lg-6">
+                  <label for="">phone</label>
+                  <input type="number" class="form-control" placeholder="phone">
+                </div>
+                <div class="col-lg-6 ">
+                  <label for="">Message</label><br>
+                  <textarea name="" id="" class="form-control"></textarea>
+
+                </div>
+              </div>
+    </div>
+    <div class="col-lg-6">
+          <label id="captchaText" class="form-label"></label>
+
+          <input type="text" id="captchaInput" class="form-control" placeholder="Enter CAPTCHA" />
+
+          <div id="captchaMessage" class="mt-2" class="col-lg-6"></div>
+        </div>
+
+        <div class="text-center">
+
+
+
+          <button type="submit" class="btn custom-btn ">
+            Send Message
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer>© 2026  Tanishka Portfolio | All Rights Reserved</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
